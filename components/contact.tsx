@@ -127,7 +127,7 @@ export function Contact() {
       </div>
 
       <footer className="mt-20 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-        <p>© 2025 Desenvolvedor Full Stack. Todos os direitos reservados.</p>
+        <p>© 2025 Lucas Soares de França. Todos os direitos reservados.</p>
       </footer>
     </section>
   );

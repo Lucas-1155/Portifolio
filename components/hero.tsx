@@ -1,14 +1,25 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16"
+    >
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4 animate-fade-in-up">
+            <Image
+            src="/lucas.jpeg"
+            alt="Foguete espacial do portfólio"
+            width={140}
+            height={140}
+            className="rounded-full mx-auto mb-2 object-cover"
+          />
             <p className="text-sm sm:text-base font-medium text-muted-foreground uppercase tracking-wider">
               Olá, eu sou Lucas Soares
             </p>
@@ -17,8 +28,9 @@ export function Hero() {
               <span className="block text-primary">Full Stack</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Criando experiências digitais excepcionais com código limpo e design intuitivo. Especializado em React,
-              Node.js e tecnologias modernas.
+              Criando experiências digitais excepcionais com código limpo e
+              design intuitivo. Especializado em React, Node.js e tecnologias
+              modernas.
             </p>
           </div>
 
@@ -33,12 +45,22 @@ export function Hero() {
 
           <div className="flex items-center justify-center gap-4 animate-fade-in-up animation-delay-400">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/Lucas-1155" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a
+                href="https://github.com/Lucas-1155"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
                 <Github className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://www.linkedin.com/in/lucas1155/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/lucas1155/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
@@ -57,5 +79,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
