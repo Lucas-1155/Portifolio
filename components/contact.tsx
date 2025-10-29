@@ -68,7 +68,7 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Localização</h3>
                   <p className="text-sm text-muted-foreground">
-                    {" "}
+                    {""}
                     Olinda, Brasil
                   </p>
                 </div>
