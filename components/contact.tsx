@@ -13,7 +13,7 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Adicione sua lógica de envio aqui
-    alert("Mensagem enviada! (Adicione sua lógica de envio)");
+    alert("Envio do formulario ainda em desenvolvimento 😁");
   };
 
   return (
